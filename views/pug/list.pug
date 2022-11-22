@@ -1,0 +1,19 @@
+html 
+    head 
+        title='list'
+    body 
+        if list.length == 0
+            h2 no hay libros
+        else 
+            table
+                tr
+                    th nombre 
+                    th precio 
+                    th thumbnail
+                each element in list   
+                    tr
+                        td=element.nombre 
+                        td=element.precio 
+                        td=element.thumbnail 
+        a(href="/")
+            button volver! 
